@@ -21,24 +21,24 @@ export default function LandingPage() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition">
-              Features
+              Возможности
             </a>
             <a href="#dashboard" className="text-muted-foreground hover:text-foreground transition">
-              Dashboard
+              Панель управления
             </a>
             <a href="#ai" className="text-muted-foreground hover:text-foreground transition">
-              AI Analytics
+              AI Аналитика
             </a>
           </div>
           <div className="flex items-center gap-3">
             <Link href="/login">
               <Button variant="ghost" size="sm">
-                Sign In
+                Войти
               </Button>
             </Link>
             <Link href="/register">
               <Button size="sm" className="bg-primary hover:bg-primary/90">
-                Get Started
+                Начать
               </Button>
             </Link>
           </div>
@@ -50,19 +50,18 @@ export default function LandingPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-3">
-              <p className="text-primary font-semibold text-sm">Enterprise Cold Chain Logistics</p>
+              <p className="text-primary font-semibold text-sm">Корпоративная логистика холодовой цепи</p>
               <h1 className="text-5xl lg:text-6xl font-bold text-balance leading-tight">
-                Intelligent Cold Storage at –50°C
+                Интеллектуальное холодное хранение при –50°C
               </h1>
               <p className="text-xl text-muted-foreground text-balance max-w-xl">
-                Real-time temperature monitoring, AI-powered demand forecasting, and automated compliance for premium
-                cold logistics.
+                Мониторинг температуры в реальном времени, прогнозирование спроса на основе ИИ и автоматизированное соблюдение требований для премиальной холодовой логистики.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/dashboard">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 glow-cyan w-full sm:w-auto">
-                  View Dashboard
+                  Открыть панель
                 </Button>
               </Link>
               <Link href="/ai-panel">
@@ -71,7 +70,7 @@ export default function LandingPage() {
                   variant="outline"
                   className="border-border hover:bg-secondary w-full sm:w-auto bg-transparent"
                 >
-                  Explore ColdBrain AI
+                  Изучить ColdBrain AI
                 </Button>
               </Link>
             </div>
@@ -84,7 +83,7 @@ export default function LandingPage() {
               <div className="text-6xl">❄️</div>
               <div className="text-center">
                 <p className="text-4xl font-bold text-primary">–50°C</p>
-                <p className="text-muted-foreground mt-2">Optimal cold chain precision</p>
+                <p className="text-muted-foreground mt-2">Оптимальная точность холодовой цепи</p>
               </div>
             </div>
           </div>
@@ -95,16 +94,16 @@ export default function LandingPage() {
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30 border-y border-border">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-3">
-            <p className="text-primary font-semibold text-sm">Core Capabilities</p>
-            <h2 className="text-4xl font-bold">Everything You Need for Cold Logistics</h2>
+            <p className="text-primary font-semibold text-sm">Основные возможности</p>
+            <h2 className="text-4xl font-bold">Всё необходимое для холодовой логистики</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Thermometer, title: "Real-Time Monitoring", desc: "Live temperature tracking across all units" },
-              { icon: TrendingUp, title: "AI Forecasting", desc: "Demand prediction with ML models" },
-              { icon: Lock, title: "Compliance Ready", desc: "Automated audit trails and regulations" },
-              { icon: Zap, title: "Instant Alerts", desc: "Smart notifications for anomalies" },
+              { icon: Thermometer, title: "Мониторинг в реальном времени", desc: "Отслеживание температуры во всех установках" },
+              { icon: TrendingUp, title: "AI прогнозирование", desc: "Предсказание спроса с помощью ML моделей" },
+              { icon: Lock, title: "Готовность к проверкам", desc: "Автоматизированные журналы аудита и соответствие нормам" },
+              { icon: Zap, title: "Мгновенные оповещения", desc: "Умные уведомления об аномалиях" },
             ].map((feature, idx) => (
               <div key={idx} className="glass-effect p-6 rounded-xl hover:bg-white/15 transition group">
                 <feature.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition" />
@@ -119,13 +118,13 @@ export default function LandingPage() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="text-4xl font-bold">Ready to Revolutionize Cold Logistics?</h2>
+          <h2 className="text-4xl font-bold">Готовы революционизировать холодовую логистику?</h2>
           <p className="text-lg text-muted-foreground">
-            Join leading enterprises optimizing their cold chain with ColdHub –50
+            Присоединяйтесь к ведущим предприятиям, оптимизирующим свою холодовую цепь с ColdHub –50
           </p>
           <Link href="/register">
             <Button size="lg" className="bg-primary hover:bg-primary/90 glow-cyan">
-              Start Free Trial
+              Начать бесплатный пробный период
             </Button>
           </Link>
         </div>
@@ -134,7 +133,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="border-t border-border py-8 px-4 sm:px-6 lg:px-8 bg-secondary/20">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground text-sm">
-          <p>© 2025 ColdHub –50. Enterprise cold logistics platform.</p>
+          <p>© 2025 ColdHub –50. Корпоративная платформа холодовой логистики.</p>
         </div>
       </footer>
     </main>

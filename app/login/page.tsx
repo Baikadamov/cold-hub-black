@@ -40,15 +40,15 @@ export default function LoginPage() {
 
         <Card className="glass-effect border-border bg-background/80">
           <CardHeader className="space-y-2">
-            <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
-            <CardDescription className="text-center">Sign in to ColdHub –50</CardDescription>
+            <CardTitle className="text-2xl text-center">Добро пожаловать</CardTitle>
+            <CardDescription className="text-center">Войдите в ColdHub –50</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <label className="text-sm font-medium flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary" />
-                  Email
+                  Электронная почта
                 </label>
                 <Input
                   type="email"
@@ -63,7 +63,7 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <label className="text-sm font-medium flex items-center gap-2">
                   <Lock className="w-4 h-4 text-primary" />
-                  Password
+                  Пароль
                 </label>
                 <Input
                   type="password"
@@ -83,12 +83,12 @@ export default function LoginPage() {
                 {isLoading ? (
                   <div className="flex items-center gap-2">
                     <div className="w-4 h-4 border-2 border-transparent border-t-primary-foreground rounded-full animate-spin" />
-                    Signing in...
+                    Вход...
                   </div>
                 ) : (
                   <div className="flex items-center gap-2">
                     <LogIn className="w-4 h-4" />
-                    Sign In
+                    Войти
                   </div>
                 )}
               </Button>
@@ -96,16 +96,16 @@ export default function LoginPage() {
 
             <div className="mt-6 pt-6 border-t border-border text-center text-sm text-muted-foreground">
               <p>
-                Don't have an account?{" "}
+                Нет аккаунта?{" "}
                 <Link href="/register" className="text-primary hover:underline font-semibold">
-                  Sign up
+                  Зарегистрироваться
                 </Link>
               </p>
             </div>
           </CardContent>
         </Card>
 
-        <p className="text-center text-xs text-muted-foreground mt-6">Demo credentials: any email / any password</p>
+        <p className="text-center text-xs text-muted-foreground mt-6">Демо доступ: любой email / любой пароль</p>
       </div>
     </main>
   )
